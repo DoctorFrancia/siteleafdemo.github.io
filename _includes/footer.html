@@ -1,19 +1,5 @@
-<!-- footer Start -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
+<footer class="site-footer">
+    <button class="go-to-top"></button>
+    <p class="copyright"><a href="{{site.github.url | prepend: site.baseurl}}" title="{{ site.title }}">{{site.title}}</a> &copy; {{ site.time | date: '%Y' }} | <a href="{{ "/feed.xml" | prepend: site.github.url | prepend: site.baseurl}}" title="RSS Feed">RSS Feed</a></p>
+    <p class="poweredby">powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> with the <a href="https://github.com/jwillmer/jekyllDecent" title="jekyllDecent Theme">jekyllDecent</a> theme</p>
 </footer>

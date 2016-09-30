@@ -1,167 +1,357 @@
 <!DOCTYPE html>
-<html class="no-js">
-  <head>
-
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Your awesome title</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- CSS -->
-<link rel="stylesheet" href="/css/owl.carousel.css" />
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/airspace.css" />
-<link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/ionicons.min.css" />
-<link rel="stylesheet" href="/css/animate.css" />
-<link rel="stylesheet" href="/css/responsive.css" />
-<link rel="stylesheet" href="/css/syntax.css" />
+    <title>jekyllDecent</title>
+    <meta name="description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
 
-<!-- Js -->
-<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/min/waypoints.min.js"></script>
-<script src="/js/jquery.counterup.js"></script>
+    
+    <meta name="keywords" content="demo, theme, example, github, jekyll, features">
+    
 
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="/js/google-map-init.js"></script>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+
+    <!-- Open Graph data -->
+
+    <meta property="og:title" content="jekyllDecent">
+	<meta property="og:type" content="website">
 
 
-<script src="/js/main.js"></script>
 
 
-  </head>
-  <body>
+<meta property="og:image" content="/assets/mountain-cover.jpg">
 
 
-    <!-- Header Start -->
-<header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <!-- header Nav Start -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="/img/logo.png" alt="Logo">
-            </a>
-          </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/work">Work</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-      </div>
+<meta property="og:site_name" content="Muestra de Jekyll">
+<meta property="og:description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
+
+
+<meta property="og:url" content="/">
+
+
+    
+	<meta property="article:author" content="http://jwillmer.de/about">
+	<link rel="author" href="http://jwillmer.de/about">
+
+
+
+
+<!-- End: Open Graph data -->
+	<!-- Twitter data -->
+    
+
+<meta name="twitter:card" content="summary">
+
+
+<meta name="twitter:site" content="@jenswillmer">
+
+
+
+<meta name="twitter:title" content="jekyllDecent">
+
+
+
+
+<meta name="twitter:url" content="/">
+
+
+<meta name="twitter:description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
+
+<meta name="twitter:image:src" content="/assets/mountain-cover.jpg">
+<!-- End: Twitter data -->
+  
+    <link href="https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield%7CMerriweather:300italic,700,300,700italic%7COpen+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="alternate" type="application/rss+xml" title="jekyllDecent" href="/feed.xml">
+
+    <!-- https://github.com/joshbuchea/HEAD -->
+    <link rel="icon" href="/assets/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/assets/favicon-62.png" sizes="62x62" type="image/png">
+</head>
+
+
+<body class="home-template">
+    <div class="site-wrapper">
+        
+<header class="main-header detail-page image-bg  has-cover" style="background-image: url(/assets/mountain-cover.jpg)">
+    <h1 class="page-title"><a href="/" title="jekyllDecent">jekyllDecent</a></h1>
+    <h2 class="page-description">Example Blog</h2>
+    <div class="nav">
+        <ul>
+            <li><a class="page-link" href="/" title="Home">Home</a></li>
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            
+
+            
+
+            
+            <li><a class="page-link" href="/offline-warning/" title="Offline">Offline</a></li>
+            
+            
+
+            
+
+            
+            <li><a class="page-link" href="/about/" title="About">About</a></li>
+            
+            
+        </ul>
     </div>
-  </div>
-</header><!-- header close -->
+</header>
+
+        <div id="content" class="content">
+    <h3>Recent Posts</h3>
+    <ul class="category recent-posts">       
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Prueba-Post" title="Prueba">Prueba</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-09-06">September  6, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Prueba" title="Prueba">Prueba</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-09-05">September  5, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/readme/Readme" title="Theme Installation and Usage">Theme Installation and Usage</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-06-08">June  8, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Features" title="Theme Features">Theme Features</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-06-07">June  7, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/YAML-Features" title="YAML Features">YAML Features</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-04-05">April  5, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+    </ul>
 
 
-
-    <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
     
-      <li>
-        <span class="post-meta">Sep 30, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/09/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">May 20, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/2016/05/20/welcome-to-jekyll.html">Welcome to jekyll!</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">May 20, 2016</span>
+    <h3 id="features">Features</h3>
+    <ul class="category features">  
+        
+        
 
-        <h2>
-          <a class="post-link" href="/2016/05/20/this-post-demonstrates-post-content-styles.html">This post demonstrates post content styles</a>
-        </h2>
-      </li>
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Prueba-Post" title="Prueba">Prueba</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-09-06">September  6, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Prueba" title="Prueba">Prueba</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-09-05">September  5, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Features" title="Theme Features">Theme Features</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-06-07">June  7, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/YAML-Features" title="YAML Features">YAML Features</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-04-05">April  5, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+        
+
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/features/Content" title="Content styles">Content styles</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-03-05">March  5, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+    </ul>
     
-      <li>
-        <span class="post-meta">May 20, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/2016/05/20/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well</a>
-        </h2>
-      </li>
     
-      <li>
-        <span class="post-meta">May 20, 2016</span>
+    <h3 id="readme">Readme</h3>
+    <ul class="category readme">  
+        
+        
 
-        <h2>
-          <a class="post-link" href="/2016/05/20/my-example-post.html">My Example Post</a>
-        </h2>
-      </li>
+        
+
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="/blog/readme/Readme" title="Theme Installation and Usage">Theme Installation and Usage</a></span>
+                        <time class="date" itemprop="datePublished" datetime="2016-06-08">June  8, 2016</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        
+        
+    </ul>
     
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
 
 </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- footer Start -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="/contact">Contact us</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
+        <footer class="site-footer">
+    <button class="go-to-top"></button>
+    <p class="copyright"><a href="" title="jekyllDecent">jekyllDecent</a> © 2016 | <a href="/feed.xml" title="RSS Feed">RSS Feed</a></p>
+    <p class="poweredby">powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> with the <a href="https://github.com/jwillmer/jekyllDecent" title="jekyllDecent Theme">jekyllDecent</a> theme</p>
 </footer>
+    </div>
+</body>
 
-
-    </body>
+<script src="/js/global.js"></script>
 </html>

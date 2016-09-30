@@ -1,27 +1,14 @@
 <!DOCTYPE html>
-<html class="no-js">
-  <head>
+<html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
+{% include head.html %}
 
-    {% include head.html %}
+<body class="home-template">
+    <div class="site-wrapper">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
+</body>
 
-  </head>
-  <body>
-
-
-    {% include header.html %}
-
-
-    {{ content }}
-
-
-
-
-
-
-
-
-
-    {% include footer.html %}
-
-    </body>
+<script src="{{ site.github.url | prepend: site.baseurl}}/js/global.js"></script>
 </html>
